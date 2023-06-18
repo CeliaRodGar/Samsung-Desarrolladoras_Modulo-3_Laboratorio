@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de Registro Laboratorio</title>
+    <link href="style2.css" rel="stylesheet" type= "text/css">
+</head>
+
+<body>
+    <div id="luciernagas-js"></div>
+    <div class="form">
+        <form method="POST" action="validacion.php" class="formulario" id="formulario">
+            <div class="title">Formulario de registro</div>
+            <div class="subtitle">Por favor, introduzca sus datos personales.</div>
+
+            <!-- Grupo Nombre -->
+            <div class="input-container cont1">
+                <input type="text" id="nombre" name="nombre" class="form-input nombreClase" placeholder=" " required/>
+                <div class="cut"></div>    
+                <label for="nombre" class="placeholder">Nombre<span><em>(requerido)</em></span></label>
+            </div>
+
+            <!-- Grupo Primer Apellido -->
+            <div class="input-container cont2"> 
+                <input type="text" id="primerApellido" name="primerApellido" class="form-input primerApellidoClase" placeholder=" " required/>
+                <div class="cut cut-primer-apellido"></div>
+                <label for="primerApellido" class="placeholder">Primer Apellido<span><em>(requerido)</em></span></label>
+            </div>
+
+            <!-- Grupo Segundo Apellido -->
+            <div class="input-container cont2"> 
+                <input type="text" id="segundoApellido" name="segundoApellido" class="form-input segundoApellidoClase" placeholder=" " required/>
+                <div class="cut cut-segundo-apellido"></div>
+                <label for="segundoApellido" class="placeholder">Segundo Apellido<span><em>(requerido)</em></span></label>
+            </div>
+
+            <!-- Grupo Email -->
+            <div class="input-container cont2"> 
+                <input type="email" id="email" name="email" class="form-input emailClase" placeholder=" " required/>
+                <div class="cut cut-email"></div>
+                <label for="email" class="placeholder">Email<span><em>(requerido)</em></span></label>
+            </div>
+            
+            <!-- Grupo Login -->
+            <div class="input-container cont1">
+                <input type="text" id="login" name="login" class="form-input loginClase" placeholder=" " required/>
+                <div class="cut cut-login"></div>    
+                <label for="login" class="placeholder">Login<span><em>(requerido)</em></span></label>
+            </div>
+
+            <!-- Grupo Contraseña -->
+            <div class="input-container cont1">
+                <input type="password" id="password" name="password" minlength="4" maxlength="8" class="form-input passwordClase" placeholder=" " required/>
+                <div class="cut cut-password"></div>    
+                <label for="password" class="placeholder">Contraseña<span><em>(requerido)</em></span></label>
+            </div>
+
+            <!-- Botón Submit -->
+                <input class="form-btn" name="submit" type="submit" value="Suscribirse" />  
+        </form>
+    <script src="luciernagas.js"></script>
+</body>
+</html>
